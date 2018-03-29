@@ -10,7 +10,9 @@ function adicionar_cesta(){
     if (item === "x"){
         $("#cesta").slideUp();
     }else{
-        $("#cesta").append(item).slideDown(3000);
+        $("#cesta")
+        .append("<p id='item_" + cesta_frutas.length + "'>"+item+"</p>")
+        .slideDown(3000);
     }
     
 
